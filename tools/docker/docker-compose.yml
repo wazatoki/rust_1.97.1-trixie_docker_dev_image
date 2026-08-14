@@ -1,13 +1,13 @@
 services:
-  rust_1.97.1_ssh_container:
+  rust_1.97.1_ssh_div_container:
     build: 
       context: .
       dockerfile: Dockerfile
       args:
         - GIT_USER_NAME=${GIT_USER_NAME}
         - GIT_USER_EMAIL=$}{GIT_USER_EMAIL}
-    image: ssh-dev-container
-    container_name: my_ssh_container
+    image: rust_1.97.1_ssh-dev-image
+    container_name: rust_1.97.1_ssh_div_container
     ports:
       - "2222:22"
     volumes:
