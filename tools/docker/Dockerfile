@@ -52,7 +52,7 @@ RUN mkdir -p /home/dev/workspace && \
 RUN curl -fLo /home/dev/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-WORKDIR /home/dev/project
+WORKDIR /home/dev/workspace
 
 RUN git config --global user.name GIT_USER_NAME && \
     git config --global user.email GIT_USER_EMAIL && \
