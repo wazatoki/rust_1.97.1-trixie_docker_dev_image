@@ -1,5 +1,5 @@
 services:
-  my_ssh_container:
+  rust_1.97.1_ssh_container:
     build: 
       context: .
       dockerfile: Dockerfile
